@@ -2,7 +2,22 @@
 
 @import url('utilities.css');
 
-:root {}
+:root {
+    --text: #646464;
+    --green: #78CC6D;
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green-deep: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --dark: #141414;
+    --margin-main: 27vw;
+}
 
 * {
     margin: 0;
@@ -14,27 +29,33 @@
 
 
 body {
-    /* font-family: "Poppins", sans-serif; */
+    font-family: "Poppins", sans-serif;
     max-width: 1140px;
     margin: 0 auto;
     background-color: #f2f2f2;
 }
 
 
-main {
+/* main {
     display: flex;
     flex-direction: row;
     width: 100%;
     gap: 2rem;
-}
+} */
 
-main .left {
+.first {
+    height: 100vh;
+    width: 25vw;
+    position: fixed;
+    top: 0;
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    width: 100%;
     background-color: #fff;
     padding: 2rem;
+}
+
+.second {
+    margin-left: 27vw;
 }
 
 .b-bottom {
@@ -50,4 +71,102 @@ main .left {
     width: 60px;
     height: 2px;
     background-color: #78CC6D;
+}
+
+.address {
+    font-size: 1rem;
+    line-height: 1.2;
+}
+
+.address span {
+    color: #78CC6D;
+    font-size: 1.25rem;
+    font-family: "Averia Serif Libre";
+}
+
+.address .col {
+    width: 50%;
+}
+
+.address p {
+    line-height: 1.5;
+}
+
+.skill .progress {
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+}
+
+.exp-box {
+    border-left: var(--green) 1px solid;
+    padding-left: 30px;
+    margin-left: 15px;
+}
+
+.episode {
+    position: relative;
+    margin-top: 1rem;
+}
+
+.episode i {
+    position: absolute;
+    left: -30px;
+    top: 5px;
+    color: var(--green);
+}
+
+.episode h3,
+.episode p {
+    margin-bottom: 0.5rem;
+}
+
+.newsletter {
+    height: 250px;
+    background-color: var(--green);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 27vw; */
+    color: #fff;
+}
+
+.newsletter p {
+    color: #fff;
+}
+
+.email-box {
+    display: flex;
+}
+
+.h1 {
+    font-size: 40px;
+}
+
+.email-box input {
+    font-size: 15px;
+    padding: 10px 20px;
+    outline: none;
+    border: 0 !important;
+    color: var(--text);
+    font-family: inherit;
+}
+
+.email-box button {
+    color: #fff;
+    background-color: var(--dark);
+    padding: 1rem 1.5rem;
+    font-size: 15px;
+    outline: none;
+    border: 0 !important;
+}
+
+.service-item i {
+    padding: 1rem;
+    border: 2px solid var(--green);
+    border-radius: 50%;
+
+    width: 50px;
+    height: 50px;
 }

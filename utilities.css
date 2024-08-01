@@ -33,6 +33,10 @@ img {
     height: auto;
 }
 
+p {
+    color: var(--text);
+}
+
 .p1 {
     padding: 1rem;
 }
@@ -43,4 +47,81 @@ img {
 
 .pt2 {
     padding-top: 2rem;
+}
+
+.m1 {
+    margin: 1rem;
+}
+
+.m2 {
+    margin: 2rem;
+}
+
+.mt1 {
+    margin-top: 1rem;
+}
+
+.mt2 {
+    margin-top: 2rem;
+}
+
+.mt5 {
+    margin-top: 5rem;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.row {
+    display: flex;
+}
+
+.col-5 {
+    flex-direction: row;
+    width: 50%;
+}
+
+.gap {
+    gap: 1rem;
+}
+
+.gap2 {
+    gap: 2rem;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.pos-abs {
+    position: absolute;
+}
+
+.red {
+    background-color: var(--red);
+}
+
+.green {
+    background-color: var(--green-deep);
+}
+
+.yellow {
+    background-color: var(--yellow);
+}
+
+.orange {
+    background-color: var(--orange);
+}
+
+.blue {
+    background-color: var(--blue);
+}
+
+.cyan {
+    background-color: var(--cyan);
 }
