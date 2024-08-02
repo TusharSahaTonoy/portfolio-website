@@ -210,3 +210,56 @@ body {
     border-color: #5ec251;
     transition: 0.3s;
 }
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
+
+.social-links * {
+    transition: 0.3s;
+}
+
+.social-links div {
+    height: 40px;
+    width: 40px;
+    border: 1px solid var(--green);
+    text-align: center;
+    padding-top: 2px;
+    display: grid;
+    place-items: center;
+}
+
+.social-links i {
+    color: var(--green);
+    font-size: large;
+    text-align: center;
+}
+
+.social-links div:hover {
+    background-color: var(--green);
+}
+
+.social-links div:hover i {
+    color: var(--dark);
+}
+
+.links a {
+    color: #fff;
+}
+
+.links a:not(:last-child)::after {
+    content: ' |';
+    padding: 0 10px;
+}
+
+p.copy {
+    color: #fff;
+}
+
+.copy a {
+    color: var(--green);
+}

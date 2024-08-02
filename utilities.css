@@ -140,6 +140,11 @@ button {
     background-color: var(--cyan);
 }
 
+.bg-black,
+.bg-dark {
+    background-color: var(--dark);
+}
+
 .form-input {
     padding: 13px 20px;
     font-size: 16px;
