@@ -37,6 +37,12 @@ p {
     color: var(--text);
 }
 
+input,
+textarea,
+button {
+    font-family: "Poppins", sans-serif;
+}
+
 .p1 {
     padding: 1rem;
 }
@@ -58,7 +64,7 @@ p {
 }
 
 .mt1 {
-    margin-top: 1rem;
+    margin-top: 1rem !important;
 }
 
 .mt2 {
@@ -81,9 +87,17 @@ p {
     display: flex;
 }
 
+.wrap {
+    flex-wrap: wrap;
+}
+
 .col-5 {
     flex-direction: row;
     width: 50%;
+}
+
+.col-full {
+    width: 100%;
 }
 
 .gap {
@@ -124,4 +138,17 @@ p {
 
 .cyan {
     background-color: var(--cyan);
+}
+
+.form-input {
+    padding: 13px 20px;
+    font-size: 16px;
+    border: 1px solid #ced4da;
+    transition: 0.3s;
+}
+
+.form-input:focus {
+    border-color: #cfedcb;
+    box-shadow: 0 0 0 0.2rem rgba(120, 204, 109, 0.25);
+    outline: 0;
 }
